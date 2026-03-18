@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import LabelEncoder
 
 # 1. 数据加载
-filepath = "C:/Users/TIANLE/Desktop/train.csv"
+filepath = "C:/Users/admin/Desktop/train.csv"
 train_df = pd.read_csv(filepath)
 filepath="C:/Users/TIANLE/Desktop/test.csv"
 test_df=pd.read_csv(filepath)
