@@ -23,7 +23,7 @@ int main()
         {
             if(is_cube(n/3) && is_square(n/2))//6|n and is_cube and is_square
             {
-                printf("最小的整数n是%lld\n",n);
+                printf("鏈�灏忕殑姝ｆ暣鏁皀鏄痩ld\n",n);
                 break;
             }
         }
