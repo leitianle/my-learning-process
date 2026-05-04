@@ -7,26 +7,25 @@ from sklearn.metrics import roc_auc_score
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
-# 1. 加载数据
-train = pd.read_csv('C:\\Users\\TIANLE\\Desktop\\playground-series-s6e5\\train.csv')
-test = pd.read_csv('C:\\Users\\TIANLE\\Desktop\\playground-series-s6e5\\test.csv')
-sample_sub = pd.read_csv('C:\\Users\\TIANLE\\Desktop\\playground-series-s6e5\\sample_submission.csv')
+
+train = pd.read_csv('train.csv')
+test = pd.read_csv('test.csv')
+sample_sub = pd.read_csv('sample_submission.csv')
 
 # 2. 深度特征工程 (Feature Engineering)
 def create_features(df):
     df = df.copy()
     
-    # A. 比例特征：轮胎寿命占当前航段的比例
+    # 轮胎寿命占当前航段的比例
     df['TyreLife_Progress'] = df['TyreLife'] / (df['LapNumber'] + 1)
     
-    # B. 性能特征：单圈时间与累积退化的交互
+    # 单圈时间与累积退化的交互
     df['Degradation_Rate'] = df['Cumulative_Degradation'] / (df['TyreLife'] + 1)
     
-    # C. 策略特征：计算该车手在当前分站的历史平均表现 (需谨慎防止泄露，此处仅作演示)
-    # 实际上可以使用 GroupBy 统计历史特征
+    # C. 策略特征：计算该车手在当前分站的历史平均表现
     df['Race_Lap_Ratio'] = df['LapNumber'] / (df['RaceProgress'] + 1e-5)
     
-    # D. 类别特征转换
+    # 类别特征转换
     cat_cols = ['Driver', 'Compound', 'Race']
     for col in cat_cols:
         df[col] = df[col].astype('category')
@@ -55,19 +54,17 @@ def objective(trial):
         'random_state': 42
     }
     
-    # 快速验证：用单折划分做调参
     x_t, x_v, y_t, y_v = train_test_split(X, y, test_size=0.2, stratify=y, random_state=42)
     model = xgb.XGBClassifier(**param, early_stopping_rounds=50)
     model.fit(x_t, y_t, eval_set=[(x_v, y_v)], verbose=False)
     
     return roc_auc_score(y_v, model.predict_proba(x_v)[:, 1])
 
-# 如果你想追求极致，可以取消下面三行的注释进行调参（耗时较长）
 # study = optuna.create_study(direction='maximize')
 # study.optimize(objective, n_trials=50)
 # best_params = study.best_params
 
-# 这里直接给出根据经验优化后的参数，适合 0.84-0.85 左右的分数
+
 best_params = {
     'n_estimators': 2000,
     'max_depth': 6,
