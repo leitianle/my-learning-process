@@ -32,8 +32,7 @@ XX=kk.values
 suvived=mymodel.predict(XX)
 df["Survived"] = suvived
 
-# 选择需要保存的列（通常只需要乘客ID和预测结果）
-# 如果您想保存所有列加上预测结果，可以直接保存整个DataFrame
+
 result_df = df[["PassengerId", "Survived"]]
 
 # 保存到CSV文件
