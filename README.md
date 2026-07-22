@@ -1,140 +1,138 @@
-```markdown
+
 <div align="center">
 
 # my-learning-process
 
-一个记录本科阶段编程、算法与机器学习实践的学习仓库。  
-从 C 语言基础练习到 Python 数据分析，再到 Kaggle / 机器学习入门项目，持续沉淀学习过程与代码实践。
+**上海财经大学统计学本科生的编程与数据科学学习记录**
+
+从 C 语言基础、算法练习，到 Python 数据分析、机器学习与 Kaggle 项目实践。  
+这个仓库记录我在统计学、编程和数据科学方向上的持续学习过程。
 
 <br>
 
-![Repo Status](https://img.shields.io/badge/status-learning%20in%20progress-2ea44f?style=for-the-badge)
-![Language](https://img.shields.io/badge/language-C%20%7C%20Python-blue?style=for-the-badge)
-![Focus](https://img.shields.io/badge/focus-algorithm%20%7C%20ML%20%7C%20practice-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/license-personal%20study-lightgrey?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Learning%20in%20Progress-2ea44f?style=for-the-badge)
+![University](https://img.shields.io/badge/SUFE-Statistics-blue?style=for-the-badge)
+![Languages](https://img.shields.io/badge/C%20%7C%20Python-Programming-orange?style=for-the-badge)
+![Focus](https://img.shields.io/badge/Data%20Science-Machine%20Learning-purple?style=for-the-badge)
 
 </div>
 
 ---
 
-## Overview
+## About This Repository
 
-`my-learning-process` 是我的个人学习代码仓库，用来保存本科阶段上课、自学和项目练习中写过的代码。
+`my-learning-process` 是我的个人学习仓库，主要用于记录本科阶段在课程学习、自主练习和数据科学项目中写过的代码。
 
-这个仓库不是一个单一项目，而是一条持续积累的学习路线，内容包括：
+作为一名上海财经大学统计学方向的学生，我希望通过这个仓库系统整理自己在以下领域的学习过程：
 
-- C 语言基础与算法练习
-- Python 编程与数据处理
-- 机器学习入门项目
-- Kaggle 数据竞赛练习
-- 课程作业与阶段性实践代码
+- C 语言程序设计
+- 基础算法与数据结构
+- Python 数据分析
+- 统计建模与机器学习
+- Kaggle 入门项目实践
+- 课程作业与个人练习代码
 
-我希望通过这个仓库记录自己从基础语法、算法思维到机器学习应用的成长过程。
+这个仓库不是一个完整的工程项目，而是一份持续更新的学习档案。它记录的不只是代码结果，也包括我从基础语法到实际建模应用的成长路径。
 
 ---
 
-## Repository Structure
+## Repository Contents
 
-| File / Project | Description | Type |
+| File / Project | Description | Category |
 | --- | --- | --- |
 | `4int to 24.c` | 四个整数计算 24 点问题 | C / Algorithm |
 | `Newton method.c` | 牛顿迭代法求解方程 | C / Numerical Method |
-| `find min n.c` | 查找最小值相关练习 | C / Basic Algorithm |
-| `solve an equation.C` | 方程求解练习 | C / Math |
-| `using GCD2output LCM.c` | 使用最大公约数计算最小公倍数 | C / Math |
+| `find min n.c` | 查找最小值相关练习 | C / Basic Programming |
+| `solve an equation.C` | 方程求解练习 | C / Mathematics |
+| `using GCD2output LCM.c` | 使用最大公约数计算最小公倍数 | C / Mathematics |
 | `shunxubiao.c` | 顺序表相关数据结构练习 | C / Data Structure |
 | `MINST.py` | MNIST 手写数字识别练习 | Python / Machine Learning |
 | `titanic.py` | Titanic 生存预测项目 | Python / Kaggle |
-| `F1 pitstop(kaggle).py` | F1 进站数据分析 / 预测练习 | Python / Kaggle |
-| `房价预测.py` | 房价预测机器学习项目 | Python / Regression |
-| `鸢尾花分类决策树.py` | 鸢尾花分类与决策树模型 | Python / Classification |
+| `F1 pitstop(kaggle).py` | F1 进站数据分析与建模练习 | Python / Kaggle |
+| `房价预测.py` | 房价预测回归模型 | Python / Regression |
+| `鸢尾花分类决策树.py` | Iris 鸢尾花分类与决策树模型 | Python / Classification |
 
 ---
 
 ## Tech Stack
 
-### Programming Languages
+### Languages
 
 - C
 - Python
 
-### Learning Areas
+### Python Libraries
 
-- Basic Programming
-- Data Structure
-- Algorithm Practice
-- Numerical Method
-- Machine Learning
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- TensorFlow / Keras
+
+### Learning Fields
+
+- Programming Fundamentals
+- Data Structures
+- Algorithms
+- Numerical Methods
+- Statistics
 - Data Analysis
-- Kaggle Competition Practice
-
-### Python Libraries Used
-
-部分 Python 项目中可能涉及：
-
-- `numpy`
-- `pandas`
-- `matplotlib`
-- `scikit-learn`
-- `tensorflow` / `keras`
+- Machine Learning
+- Kaggle Practice
 
 ---
 
-## Learning Roadmap
+## Learning Path
 
-这个仓库大致记录了以下学习路径：
-
-```text
-C Language Basics
-        ↓
-Basic Algorithms & Data Structures
-        ↓
-Python Programming
-        ↓
-Data Analysis
-        ↓
-Machine Learning Models
-        ↓
-Kaggle / Real-world Dataset Practice
-```
+C 语言基础  
+↓  
+基础算法与数据结构  
+↓  
+Python 编程  
+↓  
+数据处理与可视化  
+↓  
+统计建模  
+↓  
+机器学习入门  
+↓  
+真实数据集与 Kaggle 项目实践
 
 ---
 
 ## Highlights
 
-- 从基础代码开始，逐步过渡到数据分析和机器学习
-- 同时保留 C 语言和 Python 的学习痕迹
-- 包含多个经典入门项目，例如 MNIST、Titanic、Iris 分类、房价预测
-- 适合作为个人学习过程展示，也方便后续复盘和重构
+- 记录从基础编程到机器学习建模的完整学习过程
+- 同时覆盖 C 语言基础训练与 Python 数据科学实践
+- 包含 MNIST、Titanic、Iris、房价预测等经典入门项目
+- 结合统计学专业背景，逐步探索数据分析与机器学习应用
+- 适合作为个人学习档案，也方便后续复盘、重构和扩展
 
 ---
 
-## Project Notes
+## Future Plans
 
-这个仓库中的代码主要用于学习和实验，因此部分文件可能还没有经过完整工程化整理。
+后续计划继续优化这个仓库，包括：
 
-后续计划包括：
-
-- 优化文件命名与目录结构
-- 为不同类型项目建立独立文件夹
-- 补充运行说明与依赖文件
-- 重构部分早期代码
-- 添加更多机器学习项目总结
+- 整理文件夹结构，按 C / Python / Machine Learning 分类
+- 为重点项目补充运行说明
+- 增加项目背景、数据来源和模型思路说明
+- 重构早期代码，提高可读性
+- 持续加入新的统计建模和数据科学项目
 
 ---
 
 ## About Me
 
-我是一名财务相关专业的本科生，同时也在持续学习编程、数据分析与机器学习。
+我是一名来自上海财经大学统计学方向的本科生，正在持续学习编程、统计建模、数据分析与机器学习。
 
-这个仓库记录的是我从课堂学习、自主探索到实际项目练习的过程。  
-代码可能并不完美，但它们真实地代表了我的学习轨迹。
+这个仓库记录了我从课堂学习到自主实践的过程。  
+代码可能还不完美，但它真实展示了我的学习轨迹和成长过程。
 
 ---
 
 <div align="center">
 
-**Learning never stops. Code records the process.**
+**Learning by doing. Growing through data and code.**
 
 </div>
-```
