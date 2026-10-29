@@ -1,79 +1,87 @@
-
 <div align="center">
 
 # my-learning-process
 
-**上海财经大学统计学本科生的编程与数据科学学习记录**
+**在代码中理解统计，在数据中验证想法。**
 
-从 C 语言基础、算法练习，到 Python 数据分析、机器学习与 Kaggle 项目实践。  
-这个仓库记录我在统计学、编程和数据科学方向上的持续学习过程。
+一份持续更新的学习档案：从 C 语言、算法与数据结构，到 Python 数据分析、统计建模、机器学习与 Kaggle 实践。
 
 <br>
 
 ![Status](https://img.shields.io/badge/Status-Learning%20in%20Progress-2ea44f?style=for-the-badge)
-![University](https://img.shields.io/badge/SUFE-Statistics-blue?style=for-the-badge)
-![Languages](https://img.shields.io/badge/C%20%7C%20Python-Programming-orange?style=for-the-badge)
-![Focus](https://img.shields.io/badge/Data%20Science-Machine%20Learning-purple?style=for-the-badge)
+![Code](https://img.shields.io/badge/Code-C%20%7C%20Python-2563eb?style=for-the-badge)
+![Focus](https://img.shields.io/badge/Focus-Data%20Science-f59e0b?style=for-the-badge)
+![Practice](https://img.shields.io/badge/Practice-Kaggle-0f766e?style=for-the-badge)
 
 </div>
 
 ---
 
-## About This Repository
+## 关于仓库
 
-`my-learning-process` 是我的个人学习仓库，主要用于记录本科阶段在课程学习、自主练习和数据科学项目中写过的代码。
+`my-learning-process` 是我的个人学习仓库，用来沉淀课程练习、编程实验和数据分析项目。
 
-作为一名上海财经大学统计学方向的学生，我希望通过这个仓库系统整理自己在以下领域的学习过程：
+这里记录的不只是最终代码，也包括从基础语法、算法实现到数据预处理、模型训练和结果生成的完整探索过程。
 
-- C 语言程序设计
-- 基础算法与数据结构
+目前仓库包含 **6 个 C 语言练习、5 个 Python 项目，以及 4 份课程作业**，内容覆盖：
+
+- C 语言与程序设计基础
+- 算法、数值方法与数据结构
 - Python 数据分析
-- 统计建模与机器学习
-- Kaggle 入门项目实践
-- 课程作业与个人练习代码
-
-这个仓库不是一个完整的工程项目，而是一份持续更新的学习档案。它记录的不只是代码结果，也包括我从基础语法到实际建模应用的成长路径。
+- 机器学习与深度学习
+- Kaggle 数据建模实践
+- 统计学专业课程作业
 
 ---
 
-## Repository Contents
+## 内容导航
 
-| File / Project | Description | Category |
+### C 语言与算法
+
+| 文件 | 练习内容 |
+| --- | --- |
+| [`4int to 24.c`](./4int%20to%2024.c) | 使用四个整数组成 24 点 |
+| [`Newton method.c`](./Newton%20method.c) | 牛顿迭代法求解方程 |
+| [`find min n.c`](./find%20min%20n.c) | 求 n 个数中的最小值 |
+| [`solve an equation.C`](./solve%20an%20equation.C) | 方程求解练习 |
+| [`using GCD2output LCM.c`](./using%20GCD2output%20LCM.c) | 通过最大公约数计算最小公倍数 |
+| [`shunxubiao.c`](./shunxubiao.c) | 顺序表与基础数据结构操作 |
+
+### Python 与机器学习
+
+| 文件 | 数据任务 | 使用的方法 |
 | --- | --- | --- |
-| `4int to 24.c` | 四个整数计算 24 点问题 | C / Algorithm |
-| `Newton method.c` | 牛顿迭代法求解方程 | C / Numerical Method |
-| `find min n.c` | 查找最小值相关练习 | C / Basic Programming |
-| `solve an equation.C` | 方程求解练习 | C / Mathematics |
-| `using GCD2output LCM.c` | 使用最大公约数计算最小公倍数 | C / Mathematics |
-| `shunxubiao.c` | 顺序表相关数据结构练习 | C / Data Structure |
-| `MINST.py` | MNIST 手写数字识别练习 | Python / Machine Learning |
-| `titanic.py` | Titanic 生存预测项目 | Python / Kaggle |
-| `F1 pitstop(kaggle).py` | F1 进站数据分析与建模练习 | Python / Kaggle |
-| `房价预测.py` | 房价预测回归模型 | Python / Regression |
-| `鸢尾花分类决策树.py` | Iris 鸢尾花分类与决策树模型 | Python / Classification |
+| [`titanic.py`](./titanic.py) | Titanic 乘客生存预测 | 缺失值处理、类别编码、随机森林 |
+| [`F1 pitstop(kaggle).py`](./F1%20pitstop(kaggle).py) | F1 进站预测 | 特征工程、XGBoost、Optuna、5 折交叉验证 |
+| [`MINST.py`](./MINST.py) | MNIST 手写数字识别 | PyTorch、CNN、GPU/CPU 自动切换 |
+| [`房价预测.py`](./房价预测.py) | 房屋价格回归预测 | 数据清洗、LabelEncoder、随机森林回归 |
+| [`鸢尾花分类决策树.py`](./鸢尾花分类决策树.py) | Iris 鸢尾花分类 | 决策树、信息熵、模型可视化 |
+
+仓库根目录同时保存了四份课程作业 PDF，作为学习过程的一部分。
 
 ---
 
-## Tech Stack
+## 技术栈
 
-### Languages
+**编程语言**
 
 - C
 - Python
 
-### Python Libraries
+**Python 生态**
 
 - NumPy
 - Pandas
 - Matplotlib
 - Scikit-learn
-- TensorFlow / Keras
+- PyTorch
+- XGBoost
+- Optuna
 
-### Learning Fields
+**学习方向**
 
 - Programming Fundamentals
-- Data Structures
-- Algorithms
+- Algorithms and Data Structures
 - Numerical Methods
 - Statistics
 - Data Analysis
@@ -82,54 +90,107 @@
 
 ---
 
-## Learning Path
+## 快速开始
 
-C 语言基础  
-↓  
-基础算法与数据结构  
-↓  
-Python 编程  
-↓  
-数据处理与可视化  
-↓  
-统计建模  
-↓  
-机器学习入门  
-↓  
-真实数据集与 Kaggle 项目实践
+克隆仓库并进入项目目录：
+
+```powershell
+git clone https://github.com/leitianle/my-learning-process.git
+cd my-learning-process
+```
+
+建议为 Python 项目创建独立虚拟环境：
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+```
+
+安装常用依赖：
+
+```powershell
+python -m pip install numpy pandas matplotlib scikit-learn xgboost optuna
+```
+
+运行 PyTorch 项目前，再根据自己的操作系统和 GPU 环境安装 PyTorch：
+
+```powershell
+python -m pip install torch torchvision
+```
+
+运行示例：
+
+```powershell
+python "鸢尾花分类决策树.py"
+python "MINST.py"
+```
+
+编译一个 C 程序：
+
+```powershell
+gcc "Newton method.c" -o newton
+.\newton.exe
+```
 
 ---
 
-## Highlights
+## 数据与运行说明
 
-- 记录从基础编程到机器学习建模的完整学习过程
-- 同时覆盖 C 语言基础训练与 Python 数据科学实践
-- 包含 MNIST、Titanic、Iris、房价预测等经典入门项目
-- 结合统计学专业背景，逐步探索数据分析与机器学习应用
-- 适合作为个人学习档案，也方便后续复盘、重构和扩展
+- `titanic.py`、`F1 pitstop(kaggle).py` 和 `房价预测.py` 需要对应的 CSV 数据集，部分数据文件未包含在仓库中。
+- 部分脚本仍保留本机绝对路径，运行前需要将数据路径修改为自己的路径。
+- `MINST.py` 会通过 `torchvision` 自动下载 MNIST 数据集。
+- `鸢尾花分类决策树.py` 使用 Scikit-learn 内置的 Iris 数据集，可以直接运行。
+- 当前项目以学习记录为主，因此暂未统一依赖版本和实验配置。
 
 ---
 
-## Future Plans
+## 学习路线
 
-后续计划继续优化这个仓库，包括：
+<div align="center">
 
-- 整理文件夹结构，按 C / Python / Machine Learning 分类
-- 为重点项目补充运行说明
-- 增加项目背景、数据来源和模型思路说明
-- 重构早期代码，提高可读性
-- 持续加入新的统计建模和数据科学项目
+**C 语言基础**  
+↓  
+**算法、数值方法与数据结构**  
+↓  
+**Python 数据分析**  
+↓  
+**统计建模**  
+↓  
+**机器学习与深度学习**  
+↓  
+**Kaggle 项目实践**
+
+</div>
+
+---
+
+## 当前重点
+
+- 从基础语法逐步走向完整的数据建模流程
+- 同时练习底层编程能力与 Python 数据科学工具
+- 通过 Kaggle 项目理解特征工程、交叉验证和模型评估
+- 将统计思维应用到真实数据与机器学习任务中
+- 保持代码、实验和课程成果的长期积累
+
+---
+
+## 下一步计划
+
+- 将根目录文件整理到 `c/`、`python/`、`machine-learning/` 和 `coursework/`
+- 为每个重点项目增加独立说明、运行方式和实验结果
+- 移除代码中的本机绝对路径，改为统一的数据路径配置
+- 添加 `requirements.txt`，提高项目复现性
+- 为 Kaggle 项目补充评价指标、模型对比和结论
+- 继续加入新的统计建模与数据科学实践
 
 ---
 
 ## About Me
 
-我是一名来自上海财经大学统计学方向的本科生，正在持续学习编程、统计建模、数据分析与机器学习。
+我是一名统计学专业学生，正在持续学习编程、统计建模、数据分析与机器学习。
 
-这个仓库记录了我从课堂学习到自主实践的过程。  
-代码可能还不完美，但它真实展示了我的学习轨迹和成长过程。
-
----
+这个仓库记录我从课堂练习走向真实数据项目的轨迹。代码会继续更新，方法也会不断调整，希望每一次提交都能留下清晰可见的进步。
 
 <div align="center">
 
